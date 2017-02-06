@@ -17,7 +17,7 @@ slogan: ""
 description: 'un groupe comme les autres avec aucunes ambitions, aucun talent mais une envie de faire du bruit'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: "Merci qui"
+credits: "Merci"
 
 # Main author of the website
 # See > authors.yml

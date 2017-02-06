@@ -14,8 +14,8 @@
   url: "/photo/"
   side: right
 
-- title: "Contact"
-  url: "/contact/"
+- title: "Info"
+  url: "/info/"
   side: right
 
 #- title: "Templates"
