@@ -1,0 +1,36 @@
+- name: Soundcloud
+  url: http://soundcloud.com/user-377880856
+  class: icon-soundcloud
+  title: "soundcloud"
+
+- name: YouTube
+  url: https://www.youtube.com/channel/UC5CukgNJ9JbiseMj2ooSIFQ
+  class: icon-youtube
+  title: "YouTube"
+
+
+#- name: Mixcloud
+#  url: http://www.mixcloud.com/phlow/
+#  class: icon-cloud
+#  title: "Mixe, was sonst?"
+
+# - name: Facebook
+#   url: http://www.facebook.com/
+#   class: icon-facebook
+#   title: ""
+
+
+# - name: Instagram
+#   url: http://instagram.com/
+#   class: icon-instagram
+#   title: ""
+
+# - name: Pinterest
+#   url: http://www.pinterest.com/
+#   class: icon-pinterest
+#   title: ""
+
+# - name: Xing
+#   url: https://www.xing.com/profile/
+#   class: icon-xing
+#   title: Xing Profil
