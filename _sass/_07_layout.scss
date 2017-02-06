@@ -308,7 +308,7 @@ body.video cite { color: #fff; }
 #subfooter {
     background: $subfooter-bg;
     color: $subfooter-color;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 #subfooter-left ul.inline-list {
@@ -329,7 +329,7 @@ body.video cite { color: #fff; }
 }
 
 .social-icons {
-    margin-bottom: 10px !important;
+    margin-bottom: 0px !important;
 
 // Beware of SCSS-Syntax here
   li {
