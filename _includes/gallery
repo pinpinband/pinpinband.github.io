@@ -24,9 +24,10 @@
 *   Check out the example page › http://phlow.github.io/feeling-responsive/design/gallery/
 *
 {% endcomment %}
+
 <div>
 	<ul class="clearing-thumbs small-block-grid-4" data-clearing>
-		{% for item in page.gallery %}
+		{% for item in page.[include.gallery_name] %}
 		{% capture url %}{{ item.image_url }}{% endcapture %}
 		{% assign split_url = url | split: '.' %}
 		{% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}

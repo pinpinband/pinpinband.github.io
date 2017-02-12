@@ -1,0 +1,6 @@
+
+in _navigation.html
+<h1 class="show-for-small-only"><a href="{{ site.url }}{{ site.baseurl }}" style="color:#DF4949"> {{ site.title }}</a></h1>
+cannot find the way to define the color in the css file
+
+

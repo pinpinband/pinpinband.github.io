@@ -15,7 +15,7 @@ header:
 #
 # Gallery
 #
-gallery:
+repete2017:
     - image_url: 2017-repete/DSC4351_modified.jpeg
       #caption: Great images by Unsplash.com
     - image_url: 2017-repete/DSC4424_modified.jpeg
@@ -40,4 +40,5 @@ meta_description:
 permalink: '/photo/'
 ---
 
-{% include gallery %}
+Repete Janvier 2017
+{% include gallery gallery_name="repete2017" %}
