@@ -1,67 +1,96 @@
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
+
+#Comment modifier le site
+<br><br>
+
+le site vient du template [feeling responise](https://phlow.github.io/feeling-responsive/design/grid/).
+On devrait pouvoir faire ce que tu peux voir la. 
+
+Pour l'instant, si on se limite au pages qui sont deja crees. 
+<br><br><br>
+
+## La page d'acceuil 
+pas en acces facile pour l'instant.
+<br><br><br>
+
+## Pour editer les differentes autres pages
+
+Editer uniquement les fichiers qui sont dans le repertoire "page/" et qui ont une extension .md
+
+chaque fichier corresponds a une page du site
+
+1. music.md
+2. video.md
+3. photo.md
+4. info.md
+
+**Important:**
+Dans chaque fichier ne pas toucher aux lignes en haut entre les deux "---"
+aussi ne pas supprimer la ligne `<p></p>` a la fin de chaque fichier
+
+le format pour ecrire s'appelle markdown tu peux trouver des exemples [ici](https://fr.wikipedia.org/wiki/Markdown)
+
+Pour l'instant ne touche pas au reste des fichiers & repertoires dans "page/"
+- redirected_page.md
+- pages-root-folder/
+- original/
+<br><br><br>
+
+Pour les pages Musique, Video et Photo j ai ajoute dessous quelques infos.
+
+#### Musique
+Pour ajouter un morceau de musique avec un player, inclure dans le fichier la ligne suivante.
+
+    <audio src="http://blabla.com/monblabla.mp3" type="audio/mp3" controls="controls"></audio>
+
+avec l'adresse de ou est le fichier mp3, ici `http://blabla.com/monblabla.mp3`
+<br><br><br>
 
 
-# Newsletter: Stay in Touch for Future Updates
+#### Video
+Pour ajouter une video youtube, inclure dans le fichier les lignes suivantes.
 
-If you are a webdesigner interested in Jekyll, the static website generator, this little newsletter is for you. I share tutorials, clever code snippets and information about my own Jekyll Themes called [*Feeling Responsive*][7] and [*Simplicity*][8]. Please don't expect weekly emails :)
+    <div class="flex-video">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/_SM6nuYigaw" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-[![Subscribe to Jekyll Newsletter](https://phlow.github.io/static/tinyletter_subscribe_button.png)](https://tinyletter.com/feeling-responsive)
-
-
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
-
-## A Responsive Jekyll Theme: *Feeling Responsive*
-
-Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
-
-To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
-
-And what license is *Feeling Responsive* released under? [This one][2].
+avec le lien "embed" de youtube qui est ici `_SM6nuYigaw` pour la video de patroupal.
+Clique [ici][4] pour regarder comment recuperer le lien dans le tutoriel Youtube.
+<br><br><br>
 
 
+#### Photo
 
-## Why use this theme?
+**pour inclure une photo:**
+ajouter la photo dans repertoire "images/" du repositery github, 
+puis include dans le fichier .md la ligne suivante. 
 
-Feeling Responsive is heavily customizable.
+    <img class="t60" src="{{ site.urlimg }}header_homepage_13.jpg" alt="">
 
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
-
-**[More ›][3]**
+ou `header_homepage_13.jpg` est le nom du fichier. ne pas modifier le reste. l'image sera de la larger de la zone de texte.
 
 
+**pour inclure une gallerie de photo**
+dans ce cas il faut modifier la partie haute (entre les 2 "---") du fichier .md pour y definir les images de la gallerie.
+par exemple pour les images de la repete de janvier 2017 ajouter:
 
-## Changelog
+    repete2017:
+		- image_url: 2017-repete/DSC4351_modified.jpeg
+		  #caption: Great images by Ronny
+		- image_url: 2017-repete/DSC4424_modified.jpeg
+		  #caption: Great images by Ronny
 
-*Feeling Responsive* is in active development. Thank you to everyone who contributed, especially [Róbert Papp][5], [Alexandra von Criegern](https://github.com/plutonik-a) and [Juan Jose Amor Iglesias](https://github.com/jjamor).
+Les fichier photos doivent etre dans le repertoire "images/" du repositery github. Chaque image doit etre accompagnee d'une copie de taille reduite (ici `226px × 150px`) qui sert pour la gallerie. Pour une image nommee `XXX.jpeg` le nom de l'image reduite doit etre `XXX-thumb.jpeg`. 
+Dans l'exemple de la gallerie de la repete de janvier 2017, toutes les images sont dans le repertoire "images/2017-repete/".
 
-**[Read Changelog ›][6]**
+Ensuite il suffit d'ajouter dans le fichier .md la ou on veut metter la gallerie:
 
+    {% include gallery gallery_name="repete2017" %}
+    
 
-
-## Video Tutorial
-
-Click the image to [watch the YouTube-Video-Tutorial][4].
-
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
+<br><br><br>
 
 
 
 
 
-
-
-
- [1]: http://phlow.github.io/feeling-responsive/documentation/
- [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
- [3]: http://phlow.github.io/feeling-responsive/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: https://github.com/TWiStErRob
- [6]: https://phlow.github.io/feeling-responsive/changelog/
- [7]: http://phlow.github.io/feeling-responsive/
- [8]: http://phlow.github.io/simplicity/
- [9]: #
- [10]: #
+[4]: https://www.youtube.com/watch?v=lJIrF4YjHfQ

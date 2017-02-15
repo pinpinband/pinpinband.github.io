@@ -40,8 +40,5 @@ meta_description:
 permalink: '/photo/'
 ---
 
-juste une image
-<img class="t60" src="{{ site.urlimg }}header_homepage_13.jpg" alt="">
-
 Repete Janvier 2017
 {% include gallery gallery_name="repete2017" %}
